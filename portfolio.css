@@ -267,3 +267,151 @@ span{
         margin-top: 4rem;
     }
 }
+.skills-section {
+  padding: 7rem 9%;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title span {
+  color: #b74b4b;
+}
+
+.skill-category {
+  margin-bottom: 5rem;
+}
+
+.skill-category h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #b74b4b;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+.skills-list li {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.skills-list li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: #b74b4b;
+}
+
+.cert-link {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: #b74b4b;
+  border-bottom: 1px dashed #b74b4b;
+  transition: 0.3s ease;
+}
+
+.cert-link:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+#header {
+  transition: top 0.3s ease;
+}
+
+/* Certificate Image Styling */
+.cert-img {
+  margin-top: 1rem;
+}
+
+.cert-img img {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 1rem;
+  border: 2px solid #b74b4b;
+  box-shadow: 0 0 15px #b74b4b;
+  transition: transform 0.3s ease;
+}
+
+.cert-img img:hover {
+  transform: scale(1.05);
+}
+.cert-img img {
+  width: 100%;
+  max-width: 320px;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(183, 75, 75, 0.6);
+}
+
+video {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(183, 75, 75, 0.6);
+}
+.contact {
+  padding: 6rem 9%;
+  background-color: black;
+  color: white;
+}
+
+.contact .heading {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-form,
+.resume-section {
+  flex: 1 1 45rem;
+  background: #161616;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(183, 75, 75, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  background: black;
+  border: 1px solid #b74b4b;
+  color: white;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.resume-section h3 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #b74b4b;
+}
+
+.resume-section p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
