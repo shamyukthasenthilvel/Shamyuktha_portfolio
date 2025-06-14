@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="portfolio.css" />
+  <title>Experience - Shamyuktha</title>
+</head>
+<body>
+  <header id="header">
+    <a href="index.html" class="logo">Shamyuktha S</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <h1 class="section-title">My <span>Experience</span></h1>
+
+    <!-- TechSnapie Internship -->
+    <div class="skill-category">
+      <h2>💼 Internship – TechSnapie Solutions</h2>
+      <ul class="skills-list clean-list">
+        <li><strong>Duration:</strong> July 8, 2024 – July 28, 2024</li>
+        <li>Worked on both <strong>Python & Machine Intelligence</strong> and <strong>Web Development</strong> teams.</li>
+        <li>Contributed to live projects, collaborated with cross-functional teams.</li>
+        <li><strong>Certificates:</strong></li>
+        <div class="cert-img-row">
+          <img src="experience/techsnapie_ml.jpg" alt="ML-Python Certificate">
+          <img src="experience/techsnapie_web.jpg" alt="Web Development Certificate">
+        </div>
+      </ul>
+    </div>
+
+    <!-- Dev Motors Internship -->
+    <div class="skill-category">
+      <h2>🔧 Internship – Dev Motors</h2>
+      <ul class="skills-list clean-list">
+        <li><strong>Field:</strong> Mechanical Engineering Internship</li>
+        <li>Gained hands-on experience in automotive design & maintenance processes.</li>
+        <li>Worked on engine systems and learned practical mechanical skills.</li>
+        <li><strong>Image:</strong></li>
+        <div class="cert-img">
+          <img src="experience/devmotors_intern.jpg" alt="Dev Motors Internship Photo">
+        </div>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    let lastScrollTop = 0;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+      let scrollTop = window.scrollY || document.documentElement.scrollTop;
+      header.style.top = scrollTop > lastScrollTop ? "-80px" : "0";
+      lastScrollTop = scrollTop;
+    });
+  </script>
+</body>
+</html>

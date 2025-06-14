@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="portfolio.css" />
+  <title>Achievements - Shamyuktha</title>
+</head>
+<body>
+  <header id="header">
+    <a href="index.html" class="logo">Shamyuktha S</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="achievements.html" class="active">Achievements</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <h1 class="section-title">My <span>Achievements</span></h1>
+
+    <!-- 1st Rank Semester -->
+    <div class="skill-category">
+      <h2>🏅 First Rank in 1st and 2nd Semester</h2>
+      <ul class="skills-list clean-list">
+        <li>Scored 9.29 GPA in 2nd Semester</li>
+        <li>Recognized as top performer by department staff.</li>
+        <li>
+          Photos:
+          <div class="cert-img">
+            <img src="2nd sem mark.jpeg" alt="1st Sem Rank Certificate">
+            <img src="amma.jpeg" alt="2nd Sem Rank Certificate">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hackathon Win -->
+    <div class="skill-category">
+      <h2>🏆 Hackathon Winner</h2>
+      <ul class="skills-list clean-list">
+        <li>Won 1st Prize in my very first Hackathon competition.</li>
+        <li>
+          Prize Photo:
+          <div class="cert-img">
+            <img src="hackathonartiverse.jpeg" alt="Hackathon Win Photo">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dassault Hackathon -->
+    <div class="skill-category">
+      <h2>🛠️ Selected by Dassault Systèmes – TNWise Hackathon</h2>
+      <ul class="skills-list clean-list">
+        <li>My SolidWorks Design was selected by Dassault in TN-wise Hackathon.</li>
+        <li>
+          Design Image:
+          <div class="cert-img">
+            <img src="3wheeler solidworks.jpeg" alt="SolidWorks Design">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Technical Events -->
+    <div class="skill-category">
+      <h2>📜 Technical Events & Paper Presentations</h2>
+      <ul class="skills-list clean-list">
+        <li>Participated and won in various college-level technical symposiums and presentations.</li>
+        <li>Won prizes in model-making, paper presentation, and tech quiz events.</li>
+        <li>
+          Certificates:
+          <div class="cert-img">
+            <img src="irai1.jpeg" alt="Technical Event 1">
+            <img src="irai2.jpeg" alt="Technical Event 2">
+            <img src="bhopal.jpeg" alt="Technical Event 3">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Women's Day -->
+    <div class="skill-category">
+      <h2>🌸 Women’s Day 3rd Prize</h2>
+      <ul class="skills-list clean-list">
+        <li>Secured 3rd Prize in Women's Day inter-college event.</li>
+        <li>
+          Certificate:
+          <div class="cert-img">
+            <img src="shamy_speech_certificate_page-0001.jpg" alt="Women’s Day Prize">
+          </div>
+        </li>
+        <li>
+          Video:
+          <video width="320" height="240" controls>
+            <source src="achievements/womensday_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Stage Speaking -->
+    <div class="skill-category">
+      <h2>🎤 Stage Speaking Excellence</h2>
+      <ul class="skills-list clean-list">
+        <li>Known for confident stage presence and inspiring speeches during college events.</li>
+        <li>
+          Video:
+          <video width="320" height="240" controls>
+            <source src="achievements/stagespeech.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Chess Achievements -->
+    <div class="skill-category">
+      <h2>♟️ Chess Championships</h2>
+      <ul class="skills-list clean-list">
+        <li>14+ years of chess journey, won 50+ medals at school, district, and state levels.</li>
+        <li>
+          Certificates:
+          <div class="cert-img">
+            <img src="chesscertificate.jpeg" alt="Chess Certificate 1">
+            <img src="group.jpeg" alt="Chess Certificate 2">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    let lastScrollTop = 0;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+      let scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        header.style.top = "-80px";
+      } else {
+        header.style.top = "0";
+      }
+      lastScrollTop = scrollTop;
+    });
+  </script>
+</body>
+</html>

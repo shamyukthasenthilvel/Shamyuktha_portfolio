@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="portfolio.css" />
+  <title>Skills - Shamyuktha</title>
+</head>
+<body>
+  <header id="header">
+    <a href="index.html" class="logo">Shamyuktha S</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="Experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <h1 class="section-title">My <span>Skills</span></h1>
+
+    <!-- Certified Technical Skills -->
+    <div class="skill-category">
+      <h2>🛠️ Certified Technical Skills</h2>
+      <ul class="skills-list">
+        <li>
+          SolidWorks
+          <div class="cert-img">
+            <img src="solidwrokscertificate.jpeg" alt="SolidWorks Certificate">
+          </div>
+        </li>
+        <li>
+          Catia V5
+          <div class="cert-img">
+            <img src="catia.jpeg"Catia V5 Certificate">
+          </div>
+        </li>
+        <li>
+          Python
+          <div class="cert-img">
+            <img src="pythonguvi.jpeg" alt="Python Certificate">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Uncertified Technical Skills -->
+    <div class="skill-category">
+      <h2>💻 Technical Skills </h2>
+      <ul class="skills-list">
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+
+    <!-- Non-Technical Skills -->
+    <div class="skill-category">
+      <h2>💬 Non-Technical Skills</h2>
+      <ul class="skills-list">
+        <li>Analytical Thinking (Chess Mastermind ♟️)</li>
+        <li>Team Collaboration</li>
+        <li>Time Management</li>
+        <li>Quick Learning & Adaptability</li>
+        <li>Creative Presentation</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    let lastScrollTop = 0;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+      let scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        // scroll down
+        header.style.top = "-80px";
+      } else {
+        // scroll up
+        header.style.top = "0";
+      }
+      lastScrollTop = scrollTop;
+    });
+  </script>
+</body>
+</html>

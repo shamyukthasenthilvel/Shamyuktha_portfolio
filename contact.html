@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="portfolio.css" />
+  <title>Contact | Shamyuktha</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Shamyuktha S</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Get In <span>Touch</span></h2>
+
+    <div class="contact-container">
+      <!-- 📨 Message Form -->
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" rows="6" placeholder="Your Message Here..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- 💾 Resume Download Section -->
+      <div class="resume-section">
+        <h3>Download My Resume</h3>
+        <p>You can view or download my resume by clicking the button below.</p>
+        <a href="Resume (Shamuyktha S).pdf" download class="btn">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ EmailJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("GctvKWtGS2fTWKVHq"); // ✅ Your public key
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_zn16rsf", "PortfolioGmail", this) // ✅ Your service + template ID
+        .then(function () {
+          alert("✅ Message sent successfully! Check your Gmail.");
+          document.getElementById("contact-form").reset();
+        }, function (error) {
+          alert("❌ Failed to send message. Please try again.");
+          console.error("EmailJS Error:", error);
+        });
+    });
+  </script>
+</body>
+</html>
